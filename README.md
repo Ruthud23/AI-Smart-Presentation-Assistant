@@ -161,3 +161,6 @@ flowchart TD
     K --> L["PyAutoGUI + PyGetWindow"]
     L --> M["PowerPoint Slides"]
 ```
+## 📸 Application Preview
+
+![AI Smart Presentation Assistant Dashboard](screenshots/dashboard.png)
