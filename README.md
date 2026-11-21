@@ -139,3 +139,25 @@ LinkedIn: [Ruthu Devaraj Poojary](https://linkedin.com/in/ruthu-devaraj-poojary-
 ---
 
 *Built with Python, Computer Vision and Speech Recognition.*
+
+
+## 🏗️ System Architecture
+
+The AI Smart Presentation Assistant processes webcam gestures and voice commands to control PowerPoint presentations.
+
+```mermaid
+flowchart TD
+    A["AI Smart Presentation Assistant"] --> B["Input Layer"]
+    B --> C["Webcam"]
+    B --> D["Microphone"]
+    C --> E["OpenCV Hand Detection"]
+    E --> F["MediaPipe Gesture Recognition"]
+    D --> G["SoundDevice Voice Capture"]
+    G --> H["Vosk Speech Recognition"]
+    F --> I["Action Processing"]
+    H --> I
+    I --> J["CustomTkinter Dashboard"]
+    I --> K["PowerPoint Control"]
+    K --> L["PyAutoGUI + PyGetWindow"]
+    L --> M["PowerPoint Slides"]
+```
